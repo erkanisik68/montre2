@@ -1,0 +1,266 @@
+/* Style de base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ab8da4;
+}
+
+
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Centre tous les éléments horizontalement */
+    align-items: center;
+    padding: 20px;
+    background-color: #cc457d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Permet de positionner les éléments */
+}
+
+.header .left, .header .right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centrer verticalement */
+}
+
+.header .left {
+    left: 20px; /* Positionne "PEAR" à gauche */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .center img {
+    height: 50px;
+    width: 50px;
+}
+
+.header .right {
+    right: 20px; /* Positionne les liens à droite */
+}
+
+.header .right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header .right a:hover {
+    color: #cc457d;
+}
+
+
+.image-principal {
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.image-principal img {
+    width: 100%;
+    height: auto;
+}
+
+.image-principal-text {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-container {
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+.content-section {
+    padding: 15px;
+    text-align: center;
+}
+
+.story-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.story {
+    width: 250px;
+    text-align: center;
+}
+
+.story img {
+        width: 100%;
+        height: 330px; /* Tu peux ajuster cette valeur selon tes besoins */
+        object-fit: cover; /* Assure que l'image est bien centrée et recadrée */
+        border-radius: 5px;
+    }
+    
+
+.story h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #000;
+    letter-spacing: 0.5px; /* Espacement entre les lettres */
+    word-spacing: 2px; /* Espacement entre les mots */
+}
+
+.image-principal-text {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%; /* Réduit la largeur pour que le texte prenne moins de lignes */
+    margin: 0 auto; /* Centrer le texte */
+}
+
+/* Carrousel */
+.carousel {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    }
+    
+
+
+
+    .carousel-content {
+        width: 800px; /* Fixe la largeur du carrousel */
+        height: 500px; /* Fixe la hauteur du carrousel */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .carousel-content img {
+        width: 100%; /* Adapte l'image à la largeur du carrousel */
+        height: 100%; /* Adapte l'image à la hauteur du carrousel */
+        object-fit: contain; /* L'image sera entièrement visible, adaptée sans déformation */
+        border-radius: 10px;
+    }
+    
+    #carousel-text {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        max-width: 600px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-right: -100px;
+        margin-bottom: 450px;
+    }
+    #carousel-secondary-img {
+        margin-top: 60px;
+        margin-left: -280px;
+        width: 250px;
+        padding: 0;
+        height: auto;
+        border-radius: 10px;
+        object-fit: contain;
+        margin-top: 150px;
+        
+    }
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.bouton-carousel{
+        display: inline-block;
+        margin-top: 200px;
+        padding: 10px 20px;
+        background-color: #cc457d;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        text-align: center;
+    }
+    
+    .buy-button:hover {
+        background-color: #a33b66;
+    }/*page commande*/
+
+.confirmation-page {
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmation-image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 70px;
+}
+
+.right-section {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.right-section h1 {
+    color: #4caf50;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.right-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0 20px; /* Ajout d'espace sous le texte */
+}
+
+.bouton-retour {
+    padding: 10px 20px;
+    background-color: #cc457d;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Maintenir la taille automatique */
+    margin-top: 20px; /* Ajouter une petite marge au-dessus */
+}
+
+.bouton-retour:hover {
+    background-color: #a33b66;
+}
+
